@@ -1,0 +1,39 @@
+﻿<Page x:Class="tresh.Pages.AuthPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:tresh.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AuthPage">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Background="AntiqueWhite">
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock>Логин</TextBlock>
+                <TextBox Height="30" Margin="8 0 0 0" Width="280" Padding="5" x:Name="LoginTb"></TextBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Horizontal"></StackPanel>
+                <TextBlock>Пароль</TextBlock>
+
+                <TextBox Height="30" Width="280" Margin="0 10 100 0"  Padding="5" x:Name="PasswordTb"></TextBox>
+
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <CheckBox Margin="40 10 0 0" IsChecked="True" x:Name="SaveCb">Запомни меня</CheckBox>
+            </StackPanel>
+            <StackPanel  Orientation="Horizontal">
+                <Button Margin="45 10 0 0" x:Name="AuthBtn" Width="130" Click="AuthBtn_Click" Background="DeepPink">
+                    <TextBlock Foreground ="AntiqueWhite">Вход</TextBlock>
+                </Button>
+                <Button Margin="20 10 0 0" x:Name="RegistrBtn" Width="130"  Background="Yellow">Зарегестрироваться</Button>
+            </StackPanel>
+
+
+        </StackPanel>
+    </Grid>
+</Page>

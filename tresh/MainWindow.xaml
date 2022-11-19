@@ -1,0 +1,23 @@
+﻿<Window x:Class="tresh.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:tresh"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="37*"/>
+            <RowDefinition Height="368*"/>
+            <RowDefinition Height="29*"/>
+        </Grid.RowDefinitions>
+        <Rectangle Fill ="LightPink"></Rectangle>
+        <Image Source="/Resources/pngwing.com.png" HorizontalAlignment="Left"></Image>
+        <TextBlock x:Name="TitlePage" FontSize="25" HorizontalAlignment="Center">Игрушки</TextBlock>
+        <Rectangle Grid.Row="2" Fill ="LightPink"></Rectangle>
+        <Button x:Name="ExitBtn" Style="{StaticResource MyButton}" Content="Выход"  HorizontalAlignment="Right" Margin="50 0"/>
+        <Button x:Name="ForwardBtn" Style="{StaticResource MyButton}" Content="Назад"  HorizontalAlignment="Right" Margin=" 10 0"/>
+        <Frame x:Name="MyFrame" Grid.Row="1" NavigationUIVisibility="Hidden"></Frame>
+    </Grid>
+</Window>
